@@ -1,0 +1,426 @@
+/*----------------------------------------------------------------
+
+[Table of contents]
+
+1. Body
+2. Typography
+3. Buttons
+4. General
+5. Header 
+6. Navigation section
+7. Banner section  
+8. Featured Collections section
+9. Services section
+10. Latest-Properties section
+11. What-Client-Say section
+12. About Agent section
+13. Our Clients section
+14. Get In Touch section
+15. Footer section
+16. Mobile Responsive styles
+
+------------------------------------------------------------------*/
+
+/*==================== Body Style Start ==================== */
+body {font-family: 'Open Sans', sans-serif;font-weight: 400; font-size:14px; line-height:24px; color:#666666;}
+/*==================== Body Style End ==================== */
+
+
+/*==================== Typography Start ==================== */
+h1,h2,h3,h4,h5,h6{font-family: 'Raleway', sans-serif;font-weight: 700;}
+.h1,.h2,.h3,.h4,.h5,.h6{font-weight: 600; margin:0;}
+h1{ font-size:36px; color:#333333; text-align:center;} 
+h2{ font-size:24px; color:#333333;}
+.h1{ font-size:24px;}
+.h2{font-size:18px; line-height:24px;}
+.h3{font-size:14px; line-height:18px;}
+/*==================== Typography End ==================== */
+
+
+/*==================== Buttons Style Start ==================== */
+.btn-primary{ width:167px; max-width:100%;  font-weight:600; color:#002868; border-radius:0;padding: 8px 10px;background-color:transparent; color:#fff;}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary { color:#3d414c;background-color:#fff; border-color:#fff;}
+.btn-link{color:#333333; font-weight:600;}
+.btn-link i{font-size:13px;}
+.btn-link:hover, .btn-link:focus{ text-decoration:none;color: #bf0a30;}
+.link-red{color:#bf0a30; font-weight:600;}
+.link-red i{font-size:13px;}
+.link-red:hover, .link-red:focus{ text-decoration:none;color: #002868;}
+.btn-default{ width:295px; max-width:100%; font-size:16px;border:1px solid; padding: 7px 15px; background:#fff; box-shadow:none; text-transform:uppercase; border-radius:0;}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default{box-shadow:none; color:#fff; }
+.btn-info{border:none;}
+.btn-info:hover, 
+.btn-info:focus, 
+.btn-info:active, 
+.btn-info.active, 
+.open>.dropdown-toggle.btn-info,
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus{background-color:#52445a;}
+/*==================== Buttons Style End ==================== */
+
+
+/*==================== General Style Start ==================== */
+.navbar-brand{font-family: 'Raleway', sans-serif;}
+a:hover, a:focus{ text-decoration:none; outline:none;}
+.red-overlay{background:rgba(191,10,48,0.85); position:absolute; left:0; top:0; width:100%; height:100%;}
+.blue-overlay{ background:rgba(0,40,104,0.9); position:absolute; left:0; top:0; width:100%; height:100%;}
+.black-overlay{ background:rgba(0,0,0,0.8); position:absolute; left:0; top:0; width:100%; height:100%;}
+.border{text-align:center; line-height:19px; margin-bottom:20px;}
+.border>div{position:relative; z-index:1; width:100px; display:inline-block;}
+.border>div:before,
+.border>div:after{content:""; position:absolute;width:100%; height:3px; background-color:#333333;top:-1px;}
+.border>div:before{left:0;}
+.border>div:after{ right:0;}
+.border>div>span{width:12px;height:12px;border:3px solid #333333;background-color:#fff;position:absolute;left:50%;top:50%;margin:-6px 0 0 -6px;z-index:1;}
+.white-color .border>div:before,
+.white-color .border>div:after{background-color:#fff;}
+.white-color .border>div>span{border-color:#fff;background-color:#333;}
+.section-block{padding:80px 0;}
+.top-desc{ margin-bottom:70px;position: relative;}
+.top-desc p{max-width:82%; margin-left:auto; margin-right:auto;}
+.sale-label{position:absolute; left:0; top:0; font-size:10px; text-transform:uppercase; color:#fff; width:56px; height:57px;background:url(../../../images/sale-label-bg.png) no-repeat center center;}
+.sale-label span{ display:block;}
+.white-color .top-desc{ color:#fff;}
+.white-color h1{ color:#fff;}
+.white-color .border span::before, .white-color .border span::after{ background:#fff;}
+.slider-outer{margin:0 -15px;padding:0 0 50px;}
+.slider-outer .slide-div{padding:0 15px;}
+.no-padding{padding:0;}
+.bootstrap-select.form-control{ width:auto;}
+.bootstrap-select > .dropdown-toggle.btn{ border:1px solid #d1d1d1; background:#fff; border-radius:4px; box-shadow:none; color:#666666; outline:none; position:relative;}
+.bootstrap-select .dropdown-menu{border: 1px solid #d1d1d1; box-shadow:none; background:#fff; z-index:5;} 
+.bootstrap-select .dropdown-menu > li > a:hover, 
+.bootstrap-select .dropdown-menu > li > a:focus{color:#666666;}
+.bs-caret{ display:none;}
+.bootstrap-select > .dropdown-toggle.btn:after{content:"\f107";font-family:'FontAwesome'; margin-top: -10px;position: absolute; right: 12px;top: 50%;vertical-align: middle;}
+.form-control{height:48px;border-color:#e7e7e7;padding:10px 16px;font-size:16px;box-shadow:none;}
+.form-control::-moz-placeholder,
+.hasPlaceholder {color:#999;}
+.form-control:-ms-input-placeholder {color:#999;}
+.form-control::-webkit-input-placeholder {color:#999;}
+/*==================== General Style End ==================== */
+
+/*==================== Header Start ==================== */
+.header-top{background-color:#52445a;padding:8px 0 7px;}
+.header-top ul{padding:0;margin:0;display:inline-block;vertical-align:middle;}
+.header-top ul li{float:left;}
+.header-top ul li+li{margin-left:30px;}
+.header-top ul li a{color:#fff;display:block; opacity:0.6;}
+.header-top ul li a:hover,
+.header-top ul li a:focus{opacity:1;}
+.header-top ul li a em{margin-right:13px;}
+.header-top-right{text-align:right;}
+.navbar-default{background-color:#fff;}
+.navbar-brand{height:auto;font-size:27px;font-weight:700;padding:20px 0;}
+.navbar-brand img{width:46px;}
+.navbar-default .navbar-brand{color:#333;}
+.navbar-brand span{padding-top:12px;display:inline-block;vertical-align:middle;}
+.container .navbar-brand, 
+.container-fluid .navbar-brand{margin-left:0;}
+/*==================== Header End ==================== */
+
+
+/*==================== Navigation Start ==================== */
+.navbar-nav{text-transform:uppercase;}
+.navbar-nav > li > a{font-size:15px;}
+.navbar-default .navbar-nav > li > a{color:#333;}
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li:hover > a{color:#fff;}
+#nav .dropdown-menu{border-bottom-width:3px;border-bottom-style:solid;box-shadow:none;padding:0;}
+#nav .dropdown-menu > li > a{line-height:20px;}
+#nav .dropdown-menu > li+li > a{border-top:1px solid #d1d1d1;}
+#nav .dropdown-menu > li > a:hover, 
+#nav .dropdown-menu > li > a:focus,
+#nav .dropdown-menu > .active > a, 
+#nav .dropdown-menu > .active > a:hover, 
+#nav .dropdown-menu > .active > a:focus{color:#333333;background-color:#e7e7e7;}
+.menu-arrow{position:absolute;right:0;top:0; width:40px;height:40px;line-height:40px;font-size:16px; text-align:center;cursor:pointer;}
+.navbar-nav > li.active .menu-arrow,
+.navbar-nav > li:hover .menu-arrow{color:#fff;}
+.navbar-toggle{border:none;}
+.navbar-default .navbar-toggle .icon-bar{background-color:#fff;}
+.header-search{padding-top:26px;position:relative;}
+.search-button{height:48px;width:29px;text-align:right;line-height:48px;cursor:pointer;}
+.header-search-form{position:absolute;right:0;top:0;width:0;padding:26px 0;overflow:hidden;}
+.header-search-open .header-search-form{width:663px;padding-left:10px;background-color:#fff;}
+.header-search-form .navbar-form{padding:0;margin:0;position:relative;box-shadow:none;border:none;}
+.header-search-form .navbar-form .form-group{display:block;}
+.header-search-form .navbar-form .form-control{width:100%;}
+.header-search-form .navbar-form .btn{position:absolute;right:1px;top:1px;height:46px;width:46px;line-height:46px;padding:0;border:none;}
+/*==================== Navigation End ==================== */
+
+
+/*==================== Banner Start ==================== */
+#banner{background-position:center center;background-repeat:no-repeat;background-size:cover;position:relative;}
+.home3 .banner-inner { min-height:550px;}
+.home3 .banner-text { margin-top:180px;}
+.banner-inner{background-color:rgba(0,0,0,0.5);min-height:400px;}
+.banner-text{color:#fff;text-align:center;font-size:16px;margin-top:100px;}
+.banner-text h1{color:inherit;font-size:60px;margin:0 0 16px;}
+.banner-search{position:absolute;left:0;right:0;bottom:-108px;}
+.banner-search .container{position:relative;z-index:1;}
+.banner-search-inner{background-color:#fff;padding:40px 20px;position: relative;}
+.curved-hz-1::before {}
+.curved::before {height:30px;bottom: 0;left: 15px;right: 15px;top:auto;}
+.drop-shadow::before, .drop-shadow::after {content: "";position: absolute;z-index: -2;}
+.drop-shadow::before, .drop-shadow::after {content: "";position: absolute;z-index: -2;}
+.banner-center{max-width:670px;}
+.btns-group {margin-bottom:40px;}
+.btns-group .btn{text-transform:uppercase;}
+.btns-group .btn+.btn{margin-left:17px;}
+.banner-searchbar .form-group{position:relative;margin:0;}
+.banner-searchbar .form-control{padding-right:62px;}
+.banner-searchbar .btn{font-size:30px;width:48px;height:46px;padding:0;line-height:46px;position:absolute;right:1px;top:1px;}
+
+/*==================== Banner End ==================== */
+
+
+/*==================== Featured Collections Start ==================== */
+#featured-collections{background-color:#f2f2f2;padding-top:150px;padding-bottom:30px;}
+.feature-thumbnail{ display:block; position:relative;border:10px solid #fff;margin-bottom:30px;}
+.feature-thumbnail > img{width:100%; height:auto;}
+.feature-thumbnail:after{content:"";background:rgba(0,0,0,0.3); position:absolute; left:0;right:0;top:0;bottom:0;z-index:1;}
+.feature-thumbnail:hover:after{background:rgba(0,0,0,0.5);}
+.feature-thumbnail .caption{position:absolute;bottom:52px;left:0;right:0;color:#fff;z-index:2;text-align:center;font-weight:600;font-size:18px;line-height:24px;padding:0 5px;}
+.feature-thumbnail:hover .caption{bottom:50%;}
+/*==================== Featured Collections End ==================== */
+
+
+/*==================== Services Start ==================== */
+#services{  color:#fff; position:relative;}
+.service{ text-align:center; padding:28px 20px; margin-bottom:20px; position: relative; z-index: 2;}
+.service i{ font-size:40px;}
+.service .h2{ color:#fff; padding:20px 0;}
+.service:hover{ color:#9291c1; background:#fff;}
+.service:hover .h2,.service:hover i{color:#fff;}
+#services .img-bg{position:absolute; top:0; right:0; width:50%; height:100%;}
+#services .img-bg:after{content:""; height:100%; width:100%; background:#52445a; opacity:0.3; position:absolute; top:0; right:0;}
+#services .img:before{ content:""; height:100%; width:300px; position:absolute; left:-150px; top:0; z-index:1;}
+#services .img{background:url(../../../images/services-bg.png) no-repeat left center; background-size:cover; height:100%; position:relative;}
+/*==================== Services End ==================== */
+
+
+/*==================== Latest Properties Start ==================== */
+.property-content{ background:#fff; text-align:left; margin-bottom:30px;}
+.property-content .img{position:relative; overflow:hidden; }
+.property-content .img img{ width:100%; height:auto;}
+.property-content .img .new-label{ position:absolute; bottom:60px; left:0;}
+.property-content .img .new-label span{color:#fff; font-weight:600; text-transform:uppercase;  width:58px; display:block; line-height:30px; padding:0 10px;}
+.property-content .img .price-label{position:absolute; bottom:30px; left:0;}
+.property-content .img .price-label span{font-weight:600; font-size:16px; color:#333; background:#fff; width:90px; display:block; line-height:30px;padding:0 10px;}
+.property-content{ border:1px solid #d1d1d1;box-shadow: 0 1px 0 0 #d1d1d1;}
+.property-content .property-info{ padding:20px 10px 10px;border-bottom:1px solid #d1d1d1;}
+.property-content .property-info .h2{ color:#333333; font-size:14px; }
+.features{margin-bottom:0; padding:8px 10px;}
+.property-content .features li{ color:#333; border-left:1px solid #333; line-height:14px;}
+.property-content .features li:first-child{border:none;}
+#latest-properties .btn-default{margin-top:30px;}
+/*==================== Latest Properties End ==================== */
+
+
+/*==================== What Client Say Start ==================== */
+#client-say{background:url(../../../images/client-say-bg-2.png) no-repeat center center; background-size:cover; background-attachment:fixed; position:relative;}
+.client-feedback{margin-top: 30px; text-align:left;}
+.client-feedback .client-detail{text-align:center;padding-right: 20px;}
+.client-feedback .client-detail .name,
+.client-feedback .client-detail .img{  display: inline-block;vertical-align: middle;}
+.client-feedback .client-detail .img img{max-width: 111px;border-radius:50%;}
+.client-feedback .client-detail .name {padding-right:15px; color:#fff; text-align:right;font-weight:600; text-transform:uppercase;}
+.client-feedback .client-detail .name .desgination{ font-size:14px; display:block; color:#999999; text-transform:none;}
+.client-feedback .feedcack-detail{ position:relative;font-weight:600; font-style:italic; padding-top:25px;background:#fff;text-align:center;padding:18px 20px;margin-bottom:15px;}
+.client-feedback .feedcack-detail:after{content:""; position:absolute; bottom:-29px; right:25px;width: 0;height: 0;border-style: solid;border-width:30px 28px 0 0;border-color: #fff transparent transparent;}
+/*==================== What Client Say End ==================== */
+
+
+
+/*==================== About Agent Start ==================== */
+#about-agent{background:#f2f2f2}
+#about-agent .agent-wrapper{position:relative;text-align: center;}
+#about-agent .agent-wrapper > img{max-width:100%;}
+#about-agent .hover-block{position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.9); padding:20px; display:none;}
+#about-agent .agent-info{ position:relative; top:50%;}
+#about-agent .agent-info h2{ font-size:18px; margin:0;}
+#about-agent .agent-info .desg{color:#999999; margin-bottom:30px;}
+#about-agent .agent-info .fa{ margin-right:10px;}
+#about-agent .agent-wrapper:hover .hover-block{ display:block;}
+/*==================== About Agent End ==================== */
+
+
+/*==================== Our Clients Start ==================== */
+#our-clients .clients-slider{margin-top:50px;}
+/*==================== Our Clients End ==================== */
+
+
+/*==================== Get In Touch Start ==================== */
+#get-in-touch{ background:#bf0a30; }
+.get-in-touch{color:#f78a97; padding: 45px 0 35px; position:relative;}
+.get-in-touch .h1{color:#fff;}
+.get-in-touch .img{position:absolute; left:0; bottom:0;}
+.get-in-touch .call-us{padding-left:38px; position:relative; display:inline-block;white-space: nowrap;}
+.get-in-touch .call-us:before{content:"\f095";font-family:'FontAwesome'; position:absolute; left:0; top:0; font-size:48px;}
+.get-in-touch .call-us span{ color:#f78a97; font-size:14px; display:block;}
+.get-in-touch .btn{margin-top:10px; text-transform:uppercase;}
+/*==================== Get In Touch End ==================== */
+
+
+/*==================== Footer Start ==================== */
+#footer{ color:#fff;position:relative; background:url(../../../images/footer-bg-2.png) no-repeat left top; background-size:cover;}
+#footer h2{ margin:60px 0 40px; color:#fff;}
+.recent-posts .post{ display:table; width:100%; margin-bottom:30px;}
+.recent-posts .post .img{ display:table-cell; vertical-align:top;}
+.recent-posts .post .detail{ display:table-cell;vertical-align:top; padding-left:15px;}
+.recent-posts .post .detail p{margin:0;}
+.recent-posts .post .detail .date{ display:block; font-size:12px;}
+#footer address p{ position:relative; padding-left:18px;}
+#footer address p .fa{position:absolute; left:0; top:2px;}
+#footer address a{ color:#fff;}
+#footer .social-links li a{ height:25px; width:25px;line-height: 25px; border-radius:50%; color:#fff; text-align:center; display:block; background:rgba(255,255,255,0.2);}
+#footer .social-links li a:hover{ background:#bf0a30;}
+.footer-links{color:#cccccc; position: relative; border-top:1px solid rgba(255,255,255,0.2); margin-top:50px; padding:40px 0 30px;}
+.footer-links ul{ float:right;}
+.footer-links li{ line-height:15px; border-right:1px solid #cccccc;}
+.footer-links li:last-child{border:none;}
+.footer-links li a{color:#cccccc;}
+.footer-links li:hover a{color:#fff;}
+/*==================== Footer End ==================== */
+
+
+/* Responsive Style Start 
+-------------------------------------------------- */
+@media (min-width: 768px) {
+/*==================== Navigation Start ==================== */
+.menu-arrow{display:none;}
+.navbar-nav > li > a{padding:15px;}
+.navbar-nav > li > .dropdown-menu{ display:none !important;}
+.navbar-nav > li:hover > .dropdown-menu{ display:block !important;} 
+/*==================== Navigation End ==================== */
+
+/*==================== Banner Start ==================== */
+.btns-group .btn{font-size:18px;line-height:28px;padding:10px 33px;}
+/*==================== Banner End ==================== */
+}
+
+@media (min-width: 992px) {
+
+/*==================== Navigation Start ==================== */
+.header-navbar-right{float:right;}
+#nav{float:left;}
+.header-search{float:left;}
+.navbar-nav > li > a{padding:40px 10px;}
+/*==================== Navigation End ==================== */
+
+}
+
+@media (min-width: 1200px) {
+.container{width:1200px;}
+
+/*==================== Navigation Start ==================== */
+.navbar-nav > li > a{padding-left:16px;padding-right:16px;}
+/*==================== Navigation End ==================== */
+}
+
+@media (max-width: 1199px) {
+/*==================== Navigation Start ==================== */
+.navbar-nav > li > a{font-size:13px;}
+/*==================== Navigation End ==================== */
+
+/*==================== What Client Say Start ==================== */
+.client-feedback .client-detail .img img{ max-width:65px;}
+/*==================== What Client Say End ==================== */
+
+/*==================== Services Start ==================== */
+#services .img{ display:none;} 
+/*==================== Services End ==================== */
+}
+
+@media (max-width: 991px) {
+/*==================== Body and General Styles Start ==================== */
+.top-desc p{max-width:100%;}
+/*==================== Body and General Styles End ==================== */
+
+/*==================== Navigation Start ==================== */
+.header-navbar-right{width:100%;float:left;margin-top:5px;}
+.header-search-form{padding-top:15px;padding-bottom:5px;}
+.header-search{padding-top:15px;position:absolute;right:0;top:0;padding-right:15px;}
+.header-search-open .header-search-form{width:460px;}
+/*==================== Navigation End ==================== */
+
+/*==================== Banner Start ==================== */
+.banner-text h1{font-size:42px;}
+/*==================== Banner End ==================== */
+
+/*==================== Featured Collections Start ==================== */
+.feature-thumbnail .caption{font-size:14px;line-height:20px;bottom:10px;}
+/*==================== Featured Collections End ==================== */
+
+/*==================== Get In Touch Start ==================== */
+.get-in-touch .img{ display:none;}
+/*==================== Get In Touch End ==================== */
+
+/*==================== Footer Start ==================== */
+.footer-links ul{ float:none; margin-top:20px;}
+/*==================== Footer End ==================== */
+}
+
+@media (max-width: 767px) {
+
+/*==================== Body Style Start ==================== */
+.section-block{padding:40px 0;}
+/*==================== Body Style End ==================== */	
+
+/*==================== Header Start ==================== */
+.header-top ul li + li{margin-left:14px;}
+.header-top ul li a{font-size:12px;}
+.header-top ul li a em{margin-right:3px;}
+.header-top-left,
+.header-top-right{text-align:center;}
+.header-search{float:right;position:relative;padding:0;}
+.navbar-brand{padding:10px 0;}
+.header-search-open .header-search-form{width:280px;padding:0 0 0 10px;}
+.header-search-form .navbar-form .form-group{margin:0;}
+.search-button{width:48px;}
+/*==================== Header End ==================== */
+
+/*==================== Navigation Start ==================== */
+.navbar-toggle{float:left;}
+#nav{position:absolute;top:100%;left:0;right:0;background-color:#fff;z-index:9;}
+.container > .navbar-header,
+.container-fluid > .navbar-header, 
+.container > .navbar-collapse, 
+.container-fluid > .navbar-collapse{margin:0;}
+.navbar-nav > li > a{font-size:14px;border-bottom:1px solid #fff;}
+.navbar-default .navbar-nav > li > a em{display:none;}
+#nav .dropdown-menu{position:relative;float:none;}
+/*==================== Navigation End ==================== */
+
+/*==================== Banner Start ==================== */
+.banner-inner{min-height:300px;}
+.banner-text{margin-top:50px;}
+.banner-text h1{font-size:30px;}
+.banner-search{bottom:-70px;}
+.btns-group .btn+.btn{margin-left:7px;}
+.btns-group{margin-bottom:20px;}
+.banner-search-inner{padding:20px;}
+/*==================== Banner End ==================== */
+
+/*==================== Featured Collections Start ==================== */
+#featured-collections{padding-top:100px;}
+/*==================== Featured Collections End ==================== */
+
+/*==================== About Agent Start ==================== */
+#about-agent .agent-wrapper{margin-bottom:10px;}
+/*==================== About Agent End ==================== */
+
+/*==================== Get In Touch Start ==================== */
+.get-in-touch .call-us{ margin:20px 0;}
+/*==================== Get In Touch End ==================== */
+}
+
+
+@media (max-width:480px) and (orientation:landscape) {
+.navbar-fixed-top .navbar-collapse{max-height: 180px}
+}

@@ -1,0 +1,67 @@
+/* Common Color Start
+-------------------------------------------------- */
+
+/* purple-font-color */
+.btn-default,
+.service:hover,
+.service:hover .h2,
+.service:hover i,
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus{
+	color:#57197e;
+}
+
+.navbar-default .navbar-nav > li:hover > a,
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus,
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default:active, 
+.btn-default.active, 
+.open > .dropdown-toggle.btn-default,
+#services,
+#footer .social-links li a:hover,
+#get-in-touch,
+.property-content .img .new-label span,
+.btn-info,
+.navbar-toggle,
+#services .img:before{
+	background-color:#57197e;
+}
+
+/* purple-border-color */
+.btn-default,
+#nav .dropdown-menu,
+.form-control:focus{
+	border-color:#57197e;
+}
+
+/* purple-transparent90-background-color */
+.contact--overlay{
+	background-color:rgba(87,25,126,0.9);
+}
+/* purple-transparent80-background-color */
+.thumb--hover,
+.fancybox--overlay{
+	background-color:rgba(87,25,126,0.8);
+}
+
+/* purple box-shadow */
+.form-control:focus {
+	-webkit-box-shadow: 0 0 8px rgba(87,25,126,.6);
+	-moz-box-shadow: 0 0 8px rgba(87,25,126,.6);
+	-o-box-shadow: 0 0 8px rgba(87,25,126,.6);
+	box-shadow: 0 0 8px rgba(87,25,126,.6);
+}
+
+/* pink-font-color */
+.get-in-touch,
+.get-in-touch .call-us span{
+	color:#cd9cec;
+}
+
+/* Common Color End
+-------------------------------------------------- */

@@ -1,0 +1,853 @@
+/*---------------------------------------------------------------
+
+  Project Name: Real Estate - Responsive HTML Template
+  File Name: style.css
+  Author: DRC Systems
+  Author URI: http://khaitawng.com
+  Version: 1.0.0
+
+------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+
+[Table of contents]
+
+1. Body
+2. Typography
+3. Buttons
+4. General
+5. Header 
+6. Navigation section
+7. Banner section
+8. Services section
+9. About-Us Information section
+10. Service section
+11. Latest-Properties section
+12. What-Client-Say section
+13. Valuable-Tools & Information section
+14. About Agent section
+15. Our Clients section
+16. Get In Touch section
+17. Footer section
+18. Mobile Responsive styles
+
+------------------------------------------------------------------*/
+
+
+/*==================== Body Style Start ==================== */
+body {font-family: 'Open Sans', sans-serif;font-weight: 400; font-size:14px; line-height:24px; color:#666666;}
+/*==================== Body Style End ==================== */
+
+
+/*==================== Typography Start ==================== */
+h1,h2,h3,h4,h5,h6{font-family: 'Raleway', sans-serif;font-weight: 700;}
+.h1,.h2,.h3,.h4,.h5,.h6{font-weight: 600; margin:0;}
+h1{ font-size:36px; text-align:center;}
+h2{ font-size:24px; }
+.h1{ font-size:24px;}
+.h2{font-size:18px; line-height:24px;}
+.h3{font-size:14px; line-height:18px;}
+/*==================== Typography End ==================== */
+
+
+/*==================== Buttons Style Start ==================== */
+.btn-primary{ width:167px; max-width:100%;  font-weight:600; color:#002868; border-radius:0;padding: 8px 10px;}
+.btn-link{color:#333333; font-weight:600;}
+.btn-link i{font-size:13px;}
+.btn-link:hover, .btn-link:focus{ text-decoration:none;}
+.link-red{font-weight:600;}
+.link-red i{font-size:13px;}
+.link-red:hover, .link-red:focus{ text-decoration:none;}
+.btn-default{ border:none; padding: 7px 15px;}
+.btn-large{ font-size:18px; font-weight:600;padding: 15px 38px;}
+/*==================== Buttons Style End ==================== */
+
+
+/*==================== General Style Start ==================== */
+a:hover, a:focus{ text-decoration:none; outline:none;}
+.red-overlay{ position:absolute; left:0; top:0; width:100%; height:100%;}
+.blue-overlay{ background:rgba(0,40,104,0.9); position:absolute; left:0; top:0; width:100%; height:100%;}
+.black-overlay{ background:rgba(0,0,0,0.8); position:absolute; left:0; top:0; width:100%; height:100%;}
+.border{text-align:center; line-height:19px; margin-bottom:20px;}
+.border span{position:relative; z-index:1; width:215px; display:inline-block;}
+.border span img{ position:relative; z-index:1;}
+.border span:before,
+.border span:after{content:""; position:absolute;width:100%; height:1px; background:#000;bottom:0px; max-width:100px; }
+.border span:before{left:0px;}
+.border span:after{ right:-1px;}
+.section-block{padding:80px 0;}
+.top-desc{ margin-bottom:70px;position: relative;}
+.top-desc p{max-width:82%; margin-left:auto; margin-right:auto;}
+.sale-label{position:absolute; left:0; top:0; font-size:10px; text-transform:uppercase; color:#fff; width:56px; height:57px;background:url(../../../images/sale-label-bg.png) no-repeat center center;}
+.sale-label.for-rent{background:url(../../../images/sale-label-rent-bg.png) no-repeat center center;}
+.sale-label span{ display:block;}
+.white-color .top-desc{ color:#fff;}
+.white-color h1{ color:#fff;}
+.white-color .border span::before, .white-color .border span::after{ background:#fff;}
+.slider-outer{margin:0 -15px;padding:0 0 50px;}
+.slider-outer .slide-div{padding:0 15px;}
+.no-padding{padding:0;}
+.bootstrap-select.form-control{ width:auto;}
+.bootstrap-select > .dropdown-toggle.btn{ border:1px solid #d1d1d1; background:#fff; border-radius:4px; box-shadow:none; color:#666666; outline:none; position:relative;}
+.bootstrap-select .dropdown-menu{border: 1px solid #d1d1d1; box-shadow:none; background:#fff; z-index:11;} 
+.bootstrap-select .dropdown-menu > li > a:hover, 
+.bootstrap-select .dropdown-menu > li > a:focus{color:#666666;}
+.bs-caret{ display:none;}
+.bootstrap-select > .dropdown-toggle.btn:after{content:"\f107";font-family:'FontAwesome'; margin-top: -10px;position: absolute; right: 12px;top: 50%;vertical-align: middle;}
+.alert-warning{ font-size:12px; color:#333; text-align:center; border-color:#e6db55; background-color:#ffffe0; border-radius:0;padding: 12px 15px; margin-bottom:30px;}
+/*==================== General Style End ==================== */
+
+
+/*==================== Header Start ==================== */
+#header{position:fixed; top:0; left:0;background:url(../../../images/header-bg.png) no-repeat left bottom #fff; background-size:100% auto;width:100%; z-index:12;text-align:center;}
+#header .navbar-header{ padding:10px 0;}
+.quick-links{ padding:10px 0 0; margin:0; list-style:none;}
+.quick-links li{ padding:0 45px; display:inline-block;}
+.quick-links li:last-child{padding-right:0;}
+.quick-links li:first-child{padding-left:0;}
+.quick-links li a{ color:#999;}
+.quick-links li:hover a{color:#3d414c;}
+.quick-links li a i{ margin-right:10px;}
+.navbar-brand img{ max-width:100%;} 
+.navbar-header{ float:none;}
+/*==================== Header End ==================== */
+
+
+/*==================== Navigation Start ==================== */
+.navbar-toggle{ border-radius:6px;}
+.navbar .search-box{ background:#002868; padding: 25px 0 19px; position:relative; margin-left:30px;}
+.navbar .search-box:before{ content:""; width:40px; height:100%; position:absolute; left:-20px; top:0; background:#002868;}
+.navbar .search-box .search-group{position:relative;}
+.navbar .search-box .search-group input{color:#9291c1;border:none;border-bottom:1px solid #9291c1;background:none;width:100%;font-size:18px;font-weight:600;padding:0 25px 0 8px; border-radius:0; box-shadow:none; -webkit-appearance:none;}
+.navbar .search-box .search-group button{ color:#9291c1; font-size:18px; background:none; border:none; position:absolute; right:0; padding:0; bottom:5px;}
+.navbar-nav > li {text-align:center;}
+.navbar-nav > li > a{ font-size:16px; color:#e1dada; font-weight:600; background:none; padding:25px 20px; text-transform:uppercase;}
+.navbar-nav > li > a em{ margin-left:5px;}
+.navbar-nav > li > a:hover,.navbar-nav > li > a:focus,.navbar-nav > li.active > a,.navbar-nav > li:hover > a{background:none;/* color:#fff;*/}
+.navbar-nav > li > .dropdown-menu{border-radius:0; padding:0;}
+.navbar-nav .dropdown-menu{ background:#3d414c; margin-left:-50px;}
+.navbar-nav .dropdown-menu:before{ content:""; position:absolute; left:50%; top:-8px; z-index:1;margin-left: -8px;width: 0;height: 0;border-style: solid;border-width: 0 8px 8px 8px;border-color: transparent transparent #3d414c; }
+.navbar-nav .dropdown-menu > li > a{ text-transform:uppercase; color:#989ca8; background:none; border-bottom:1px solid #989ca8;}
+.navbar-nav .dropdown-menu > li:last-child > a{ border:none;}
+.navbar-nav .dropdown-menu > li.active > a,
+.navbar-nav .dropdown-menu > li:hover > a{ color:#fff;}
+.navbar.fixed{ position:fixed; top:0; left:0; width:100%; z-index:100;} 
+.menu-arrow{position:absolute;right:0;top:0px; width:40px;height:40px;line-height:40px;font-size:16px; text-align:center;cursor:pointer;color:#fff;}
+.navbar-nav > li:hover .menu-arrow,
+.navbar-nav > li.active .menu-arrow{color:#fff;}
+/*==================== Navigation End ==================== */
+
+
+/*==================== Banner Start ==================== */
+#banner{position:relative;}
+.banner-img-slider{padding:0;}
+.banner-thumb{background-repeat:no-repeat;background-position:center top;background-size:cover;}
+.banner-layer{position:absolute;left:0;top:0;right:0;bottom:0;z-index:4;background-color: transparent;}
+.banner-text-wrapper{position:absolute;top:50%;left:0;right:0;padding:2px 0;z-index:5; color:#fff;}
+.banner-text h1{margin-top:0; margin-bottom:25px;font-weight:700; font-size:60px; text-transform:uppercase;}
+.banner-text p{margin-bottom:40px; font-size:16px;}
+.search-wrapper .input-group{ margin:0 45px; position:relative;}
+.search-wrapper .form-control{ height:60px; border-radius:10px; font-size:16px; color:#999999; border:none; padding-left:95px; padding-right:55px;}
+.search-wrapper .btn{ border-radius:10px;font-weight:600; font-size:18px; min-width:154px; height:60px; margin:0; padding:0;}
+.search-wrapper .btn i{ margin-right:9px;}
+.search-wrapper .input-group .bootstrap-select{ position:absolute; left:20px; top:0; padding:0;z-index: 3; font-size:18px; font-weight:600; border:none; box-shadow:none; background:transparent;}
+.search-wrapper .input-group .bootstrap-select .dropdown-toggle{ border:none; color:#333333; min-width:1px; background:transparent;}
+#banner .slick-arrow{ text-align:center; border-radius:50%; width:37px;height:37px;background-color:#000;z-index:6; opacity:0.6;}
+#banner .slick-prev{left:5%;}
+#banner .slick-next{right:5%;}
+#banner .slick-arrow:hover,
+#banner .slick-arrow:focus, 
+#banner .slick-arrow:hover,
+#banner .slick-arrow:focus{opacity:1;}
+#banner .slick-arrow::before{color:#fffefe;font-size: 30px;}
+/*==================== Banner End ==================== */
+
+
+/*==================== Services Start ==================== */
+.service{ text-align:center; padding:28px 20px; margin-bottom:20px;}
+.service i{ font-size:40px;}
+.service .h2{ color:#333333; padding:20px 0;}
+.service:hover{ color:#9291c1; background:#002868;}
+.service:hover .h2,.service:hover i{color:#fff;}
+/*==================== Services End ==================== */
+
+
+/*==================== About Us Information Start ==================== */
+#abt-info{ padding:65px 0;color:#fff; text-align:center; text-transform:uppercase;background:url(../../../images/about-info-bg.png) no-repeat center center; background-attachment:fixed;background-size:cover; position:relative;}
+#abt-info .info-box .icon{ font-size:36px;}
+#abt-info .info-box .h1{ padding:20px 0 2px;}
+#abt-info .info-box p{margin:0px;}
+#abt-info .info-box p a{color:#fff;}
+/*==================== About Us Information End ==================== */
+
+
+/*==================== Latest Properties Start ==================== */
+#latest-properties{ background:#f2f2f3;}
+.property-content{ background:#fff; text-align:left;}
+.property-content .img{position:relative; overflow:hidden;}
+.property-content .img img{ width:100%; height: 250px !important;}
+.property-content .property-info{ padding:20px;}
+.property-content .property-info .h2{ color:#333333;}
+.property-content .property-info .price{display:block;font-size:18px; font-weight:600;line-height: 24px;}
+.property-content .property-info .features ul{ padding:25px 0 0; margin:0; list-style:none;} 
+.property-content .property-info .features ul li{ font-size:13px; width:50%; float:left;padding-bottom: 10px;}
+.property-content .property-info .features ul li i{ margin-right:5px;font-size: 20px;}
+.property-content .location{ text-align:center; color:#999999; border-top:1px solid #d1d1d1;padding: 10px 0;}
+.property-content .location i{margin-right:5px;}
+.property-content .property-info .add-fav{ float:right; color:#424242;}
+.property-content .property-info .add-fav:hover{}
+/*==================== Latest Properties End ==================== */
+
+
+/*==================== What Client Say Start ==================== */
+#client-say{background:url(../../../images/client-say-bg.png) no-repeat center center; background-size:cover; background-attachment:fixed; position:relative;}
+.client-feedback{margin-top: 30px; text-align:left; padding:20px; background:#fff;}
+.client-feedback .client-detail .name,
+.client-feedback .client-detail .img{ float:left;}
+.client-feedback .client-detail .img{max-width: 111px;padding:8px; margin-top:-50px; background:#fff;}
+.client-feedback .client-detail .name {padding-left:15px;}
+.client-feedback .client-detail .name .desgination{ font-size:14px; display:block; color:#999999;}
+.client-feedback .feedcack-detail{ font-weight:600; font-style:italic; padding-top:25px;}
+/*==================== What Client Say End ==================== */
+
+
+/*==================== Valuable Tools and Information Start ==================== */
+.content-box{border:1px solid #d1d1d1;}
+.content-box .img img{ width:100%; height:auto;}
+.content-box .detail{ padding:20px; text-align:center;}
+.content-box .h2{ color:#333333; text-transform:uppercase; padding:10px 0 15px;overflow: hidden;text-overflow: ellipsis; white-space: nowrap;}
+/*==================== Valuable Tools and Information End ==================== */
+
+
+/*==================== About Agent Start ==================== */
+#about-agent{ min-height:700px;}
+.agent-bg{position:relative;background:#002868;}
+#about-agent h1{ text-align:left; margin:0 0 40px;}
+#about-agent .agent-img { text-align:left;}
+#about-agent .agent-img img{height:auto;}
+.about-agent-detail{height:100%;position:absolute; right:0; top:0; max-width:100%; width:65%; padding:60px;}
+.about-agent-detail .inner-bg{background:#fff; text-align:left; padding:50px 35px; width:100%; min-height:580px;height:100%;}
+.about-agent-detail .name {color:#333333; text-transform:uppercase;}
+.about-agent-detail .name .desgination{ font-size:14px; display:block; color:#999999;}
+.about-agent-detail .agent-info{font-weight:600; font-style:italic; margin:30px 0 50px;}
+.about-agent-detail address p{ position:relative; padding-left:40px; margin-bottom:35px;}
+.about-agent-detail address p .fa{position:absolute; left:0; top:4px; font-size:36px;}
+.about-agent-detail address label{ display:block;}
+#about-agent .slick-prev,#about-agent .slick-next{ height:34px; width:34px; border-radius:4px; background:#002868; z-index:10; top:auto; bottom:99px;}
+#about-agent .slick-prev:hover,#about-agent .slick-next:hover{}
+#about-agent .slick-prev::before, 
+#about-agent .slick-next::before{ color:#fff; font-size:24px;}
+#about-agent .slick-prev{ right:134px; left:auto;}
+#about-agent .slick-next{ right:90px;}
+/*==================== About Agent End ==================== */
+
+
+/*==================== Our Clients Start ==================== */
+#our-clients .clients-slider{margin-top:50px;}
+/*==================== Our Clients End ==================== */
+
+
+/*==================== Get In Touch Start ==================== */
+.get-in-touch{color:#f78a97; padding: 45px 0 35px; position:relative;}
+.get-in-touch .h1{color:#fff;}
+.get-in-touch .img{position:absolute; left:0; bottom:0;}
+.get-in-touch .call-us{padding-left:38px; position:relative; display:inline-block;white-space: nowrap;}
+.get-in-touch .call-us:before{content:"\f095";font-family:'FontAwesome'; position:absolute; left:0; top:0; font-size:48px;}
+.get-in-touch .call-us span{ color:#f78a97; font-size:14px; display:block;}
+.get-in-touch .btn{margin-top:10px; text-transform:uppercase;}
+/*==================== Get In Touch End ==================== */
+
+
+/*==================== Footer Start ==================== */
+#footer{ color:#fff;position:relative; background:url(../../../images/footer-bg.png) no-repeat left top; background-size:cover;}
+#footer h2{ margin:60px 0 40px; color:#fff;}
+.recent-posts .post{ display:table; width:100%; margin-bottom:30px;}
+.recent-posts .post .img{ display:table-cell; vertical-align:top;}
+.recent-posts .post .detail{ display:table-cell;vertical-align:top; padding-left:15px;}
+.recent-posts .post .detail p{margin:0;}
+.recent-posts .post .detail .date{ display:block; font-size:12px;}
+#footer address p{ position:relative; padding-left:18px;}
+#footer address p .fa{position:absolute; left:0; top:2px;}
+#footer address a{ color:#fff;}
+#footer .social-links li a{ height:25px; width:25px;line-height: 25px; border-radius:50%; color:#fff; text-align:center; display:block; background:rgba(255,255,255,0.2);}
+#footer .social-links li a:hover{}
+.footer-links{color:#cccccc; position: relative; border-top:1px solid rgba(255,255,255,0.2); margin-top:50px; padding:40px 0 30px;}
+.footer-links ul{ float:right;}
+.footer-links li{ line-height:15px; border-right:1px solid #cccccc;}
+.footer-links li:last-child{border:none;}
+.footer-links li a{color:#cccccc;}
+.footer-links li:hover a{color:#fff;}
+/*==================== Footer End ==================== */
+
+
+/*==================== Breadcrumb Start ==================== */
+.breadcrumb-wrapper{border-bottom:1px solid #d1d1d1;text-transform:uppercase;}
+.breadcrumb-wrapper .breadcrumb{padding:8px 0; margin:0;}
+.breadcrumb{ background:#fff;}
+.breadcrumb > li > a{ color:#999999; }
+.breadcrumb > li.active{}
+.breadcrumb > li + li::before{color:#999999;}
+/*==================== Breadcrumb End ==================== */
+
+
+/*==================== Search Control Start ==================== */
+.search-control-wrapper { padding:30px 0; position:relative;}
+.search-controls .search-group{ max-width:400px;width: 100%;}
+.search-controls .input-group .btn{ background:#fff; color:#999999; border:1px solid #d1d1d1;height:42px; margin-left:-1px;}
+.search-controls .input-group .btn i{margin-right:10px;}
+.search-controls .input-group .form-control{ height:42px; box-shadow:none;}
+.search-controls .category-group{ margin-right:20px; float:left;}
+.search-controls .category-group .form-control { height:42px;}
+.search-controls .category-group  .btn-default{padding:10px 15px;}
+.search-controls .more-filter{ font-size:16px; line-height:42px;min-width: 112px; display:inline-block;}
+.search-controls .more-filter i{ margin-right:8px;} 
+.more-filters{ border-top:1px solid #d1d1d1;display:none;position:absolute; top:100%; left:0; width:100%; background:#fff;box-shadow: 0 2px 0 #ca1f27; padding:20px 0px 30px; z-index:10;}
+.more-filters .h3{ text-transform:uppercase; color:#333;font-weight: 600; margin:0 0 20px;}
+.more-filters .category-block{padding-top:40px;}
+.more-filters .category-list a{ font-size:13px; color:#666; line-height:18px; border:1px solid #d1d1d1; float:left;padding: 4px 14px 6px; border-radius: 15px;margin: 0 15px 10px 0;}
+.more-filters .link-btn{font-size:14px;border-radius: 28px; text-align:center; color:#fff; background:#ca1f27;line-height:18px;padding: 12px 14px; display:inline-block; position:relative; width:100%;}
+.more-filters .link-btn .fa{margin-left:5px;}
+.more-filters .filtered-list{border-bottom:1px solid #d1d1d1; padding-bottom:20px;}
+.more-filters .filtered-list .link-btn{ width:auto; margin-right:15px;}
+.more-filters .filtered-list .reset-btn{ color:#666;}
+/*==================== Search Control End ==================== */
+
+
+/*==================== Filter Start ==================== */
+.inner-wrapper{ background:#f2f2f3; padding:30px 0 138px;}
+.filter-wrapper{ background:#fff; margin:0 0 30px; padding:13px;}
+.filter-wrapper p{margin:0;color:#333333;} 
+.filter-wrapper .category .filter-group{ float:left; margin-right:20px;}
+.filter-wrapper .category .filter-group label{ font-weight:400; color:#000; line-height:30px; margin:0;} 
+.filter-wrapper .category .btn-group{ float:left;}
+.filter-wrapper .category .btn-group .btn-default{background:#fff; box-shadow:none; color:#666666; border:1px solid #d1d1d1; padding:4px 13px;}
+.filter-wrapper .category .btn-group .btn-default.active{ color:#fff;}
+.filter-wrapper .category .form-control{ height:30px;}
+.filter-wrapper .category .filter-group .btn{ padding:4px 8px;}
+/*==================== Filter End ==================== */
+
+
+/*==================== Properties List Start ==================== */
+#properties-list .property-wrapper{ background:#fff; margin-bottom:20px; padding:20px;}
+#properties-list .property-content .property-info .price{ float:right;}
+.property-wrapper .add-fav{position:absolute; top:5px; right:5px; color:#fff; height:20px; width:20px; text-align:center; display:block; font-size:13px; line-height:20px;}
+#properties-list .property-content .property-info{padding:0;}
+.property-wrapper .property-content .location{ text-align:left; border:none;}
+.property-wrapper .property-content .location i{ font-size:16px;}
+#properties-list .property-content .property-info p{ font-size:13px; line-height:18px;}
+#properties-list .property-content .property-info .features ul{padding-top:15px;}
+#properties-list .property-content .property-info .features ul li{ width:auto; padding-right:17px;}
+#properties-list .property-content .property-info .features ul li .fa{ font-size:14px;}
+/*==================== Properties List End ==================== */
+
+
+/*==================== Siderbar Start ==================== */
+#sidebar .side-wrapper{ margin-bottom:20px; }
+#sidebar .side-wrapper .heading{ color:#fff;padding:19px 20px; line-height:18px;}
+#sidebar .side-wrapper .side-info{background:#fff; padding:20px;}
+#sidebar .post{ padding:20px 0px; border-bottom:1px solid #d2d2d2;}
+#sidebar .post:first-child{padding-top:0;}
+#sidebar .post:last-child{padding-bottom:0; border:none;}
+#sidebar .post .img,#sidebar .post .post-detail{ display:table-cell; vertical-align:top;}
+#sidebar .post .img img{ max-width:60px;}
+#sidebar .post .post-detail {padding-left:10px;}
+#sidebar .post .post-detail .h3{ color:#3d414c;}
+#sidebar .post .post-detail .date{ font-size:12px;}
+#sidebar .agent-need{ background:#002868; min-height:200px; position:relative;}
+#sidebar .agent-need::before {border: 1px solid #ffffff;bottom: 10px;content: "";left: 10px;position: absolute;right: 10px;top: 10px;}
+#sidebar .agent-need .h2{color:#fff; text-transform:uppercase; margin-bottom:30px;}
+#sidebar .agent-need .contact-agent{ padding:28px; max-width:50%;}
+#sidebar .agent-need .agent-img{ position:absolute; right:0; bottom:0;}
+#sidebar .agent-need .btn{position:relative; z-index:1; font-size:10px; text-transform:uppercase; border-radius:0; padding:6px 7px;}
+#sidebar .agent-need .btn:after{ content:""; height:100%; width:10px; position:absolute; right:-6px; top:0;}
+#sidebar .agent-need .btn i{margin-right:5px;}
+#sidebar .agent-contact-form .form-group{margin-bottom:14px;}
+#sidebar .agent-contact-form .form-control{ border-color:#d1d1d1; font-size:13px; height:30px;}
+#sidebar .agent-contact-form textarea.form-control{ height:60px; resize:none;}
+#sidebar .agent-contact-form .btn{text-transform:uppercase; width:100%; font-size:13px;}
+#sidebar .categories li{ padding-left:16px; position:relative;margin-bottom: 6px;}
+#sidebar .categories li:before{content:"\f105";font-family:'FontAwesome'; position:absolute; left:0; top:0;color:#3d414c;}
+#sidebar .categories li a{ color:#3d414c; position:relative;}
+#sidebar .categories li:hover a,#sidebar .categories li:hover:before{}
+#sidebar .search-box{ background:#002868; padding:20px;}
+#sidebar .search-box .search-group{position:relative;border-radius:6px;}
+#sidebar .search-box .search-group input{ width:100%; background:#f2f2f3; height:42px; border:none; padding:0 25px 0 10px; border-radius:6px;}
+#sidebar .search-box .search-group button{position:absolute; right:0; top:0; color:#989ca8; border:none;border-radius:6px;line-height: 42px; padding-right:10px; background:none;}
+/*==================== Siderbar End ==================== */
+
+
+/*==================== Properties Grid Start ==================== */
+#properties-grid .property-wrapper{margin-bottom:30px;}
+#properties-grid .property-info{ padding:15px 10px;}
+#properties-grid .property-info .location{padding:5px 0 10px;}
+.property-content .hover-block{ opacity:0;position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5); color:#fff; text-align:center; font-size:18px;line-height:24px; font-weight:600; z-index:9;}
+.property-content .hover-block span{display: block; position:relative; top:50%;}
+.property-content .img:hover .hover-block{opacity:1; color:#fff;}
+/*==================== Properties Grid End ==================== */
+
+
+/*==================== Property Listing Map Start ==================== */
+#property-listing-map img{ width:100%; height:auto;}
+#property-listing-map iframe{ width:100%;}
+/*==================== Property Listing Map End ==================== */
+
+
+/*==================== Blogs Start ==================== */
+.blog-wrapper{padding:50px 0; border-top:1px solid #d1d1d1;}
+.blog-wrapper .blog-img{position:relative;}
+.blog-wrapper .blog-img img{ width:100%; height:auto;}
+.blog-wrapper .date{ position:absolute; right:-10px; top:30px; text-transform:uppercase;color:#fff; height:70px; width:70px; text-align:center; padding:12px 0;}
+.blog-wrapper .date:before{ content:""; position:absolute; top:-10px; right:0;display: inline-block;width: 0;height: 0;border-style: solid;border-width: 10px 0 0 10px;border-color: transparent transparent transparent #4e0307;}
+.blog-wrapper .date:after{ content:""; position:absolute; bottom:-10px; right:0;display: inline-block;width: 0; height: 0;border-style: solid;border-width: 10px 10px 0 0;border-color: #4e0307 transparent transparent transparent;}
+.blog-wrapper .date span{ font-weight:600; font-size:24px; display:block;}
+.blog-wrapper:first-child{padding-top:0;}
+.blog-wrapper .blog-detail h2{text-transform:uppercase; margin:30px 0 10px;}
+.blog-wrapper .blog-detail .author{ color:#000; text-transform:uppercase; padding-bottom:20px;}
+.blog-wrapper .blog-detail .btn-link{ text-transform:uppercase;margin-top:20px;display: table;}
+/*==================== Blogs End ==================== */
+
+
+/*==================== Blogs Detail Start ==================== */
+.blog-wrapper .blog-detail p.quote {font-size:18px;line-height: 24px;font-style: italic;position: relative;padding-left: 40px;margin: 20px 0;}
+.blog-wrapper .blog-detail .quote:before {content: "\f10d";position: absolute;left: 0;top: 4px;font-size: 28px;line-height: 28px;color: #cccccc;font-family: FontAwesome;font-style: normal;}
+.comments-wrapper{border-top: 1px solid rgba(0,0,0,0.2);margin-top: 40px;}
+.commentBox {border: 1px solid #cccccc;margin: 40px 10px 0;padding: 20px 30px; background:#fff;}
+.commentBox .post {padding: 20px 0;border-bottom: 1px solid #cccccc;}
+.commentBox .post .user-details .user-img {display: table-cell;vertical-align: middle;}
+.commentBox .post .user-details .user-img img {max-width: 116px;}
+.commentBox .post .user-details .user-info {display: table-cell;vertical-align: middle;padding-left: 38px;}
+.commentBox .post .user-details .user-info .date-info {font-size: 14px;line-height: 22px;color: #666666;}
+.commentBox .post .user-details .user-info .date-info .fa {font-size: 12px;margin-right: 10px;}
+.commentBox .post .user-details .user-info h2 {font-size: 21px;line-height: 22px;color: #333333;margin: 7px 0;}
+.commentBox .post .user-details .user-info .reply {font-size: 14px;line-height: 22px;text-decoration: underline;}
+.commentBox .post p {background: #f2f2f3;padding: 20px;margin: 20px 0 0;position: relative;border-left: 6px solid;}
+.commentBox .post p:after {content: "";position: absolute;top: -19px;left: 10%;border-left: 20px solid #f2f2f3;border-right: 20px solid transparent;border-top: 20px solid transparent;}
+.commentBox .post .innerComment {padding: 30px 0 0 30px;}
+.commentBox .reply-form {margin-top: 30px;}
+.commentBox .reply-form h2{margin: 0 0 20px;}
+.commentBox .reply-form .form-group {margin-bottom: 17px;}
+.commentBox .reply-form .form-control {box-shadow: none;border-radius: 0;border-color: #cccccc;box-shadow: 0 2px 0 0 #cccccc;}
+.commentBox .reply-form textarea.form-control {height: 105px;resize: none;}
+.social-share {margin-top: 30px;}
+.social-share ul {padding: 0;margin: 0;list-style: none;}
+.social-share ul li {float: left;margin-right: 20px;}
+.social-share ul a {height: 50px;width: 50px;line-height: 50px;text-align: center;color: #fff;border-radius: 4px;display: inline-block;font-size: 30px;}
+.social-share ul a.facebook {background: #3b579d;}
+.social-share ul a.twitter {background: #5ea9dd;}
+.social-share ul a.google {background: #df4a32;}
+.social-share ul a.pinterest {background: #cb2027;}
+.social-share ul a.linkedin {background: #007bb6;}
+.social-share ul a.tumblr {background: #34465d;}
+.social-share ul a.stumbleupon {background: #eb4924;}
+/*==================== Blogs Detail End ==================== */
+
+
+/*==================== Detail Page Start ==================== */
+#detail-page .nav-tabs{background:#fff; border:none;}
+#detail-page .nav-tabs li a{  padding: 16px 22px; font-size:18px;font-weight:600; color:#333; background:#fff; margin-right:0; border:none; border-bottom:3px solid #fff;border-radius:0;}
+#detail-page .block-wrapper{ padding:30px 0;}
+#detail-page .block-wrapper h2{ font-weight:600; color:#333;font-family: 'Open Sans', sans-serif; border-bottom:2px solid #333; padding-bottom:14px;}
+#detail-page .block-wrapper h3{ font-size:16px; font-weight:600;color:#333;font-family: 'Open Sans', sans-serif; margin:0 0 10px;}
+#detail-page .inner-wrapper{ padding:30px 0 18px;}
+#detail-page .inner-wrapper ul{padding:0; margin:0 0 20px; list-style:none;}
+#detail-page .inner-wrapper ul li{position:relative; padding-left:17px;}
+#detail-page .inner-wrapper .fa{ position:absolute; left:0; top:5px;}
+#detail-page .border{ height:1px; width:100%; background:rgba(51,51,51,0.5); margin-bottom:10px;}
+#detail-page .inner-wrapper table{ width:100%;text-align:center}
+#detail-page .inner-wrapper table tr th{ font-size:15px; font-weight:600; color:#333;}
+#detail-page .inner-wrapper form label{ display:block; font-weight:600; color:#333;}
+#detail-page .inner-wrapper .form-group input{ width:100%; background:#fff; border:1px solid #d1d1d1; border-radius:4px; padding:5px; height:30px;}
+.property-slider{ margin-bottom:20px; position:relative;}
+.property-slider .slider-info{position:absolute; bottom:55px; left:0; width:100%; text-align:center;}
+.property-slider .slider-info > div{ background:rgba(0,0,0,0.9); color:#fff; display:inline-block; width:50px;font-size:12px; line-height:28px;border-radius: 4px;}
+.property-slider .slider-info .get-the-title{ display:inline-block;}
+.property-slider .slider-info > div .fa{margin-right:5px; }
+.property-img-slider{padding:0;}
+.property-img-slider .slick-prev,
+.property-img-slider .slick-next{ width:40px; height:60px; background:#000; z-index:1;}
+.property-img-slider .slick-prev{ left:0;border-radius: 0 12px 12px 0;}
+.property-img-slider .slick-next{ right:0;border-radius: 12px 0 0 12px;}
+.property-img-slider .slick-prev::before, 
+.property-img-slider .slick-next::before{ color:#fff;}
+.property-img-slider .property-thumb{position:relative;}
+.property-thumb img{ width:100%; height:auto;}
+.property-slider .expand-icon{position:absolute; top:20px; right:20px; height:45px; width:45px; color:#fff; border-radius:8px; background:#000; text-align:center; line-height:45px; font-size:16px; z-index:1;}
+#detail-page .inner-wrapper .chart-detail{ width:100%; margin-top:30px; text-align:left;}
+#detail-page .chart-detail .circle{ height:10px; width:10px; border-radius:50%; display:inline-block; margin-right:10px;}
+#detail-page .chart-detail .circle.orange{ background:#f8a01c;}
+#detail-page .chart-detail .circle.green{ background:#afd362;}
+#detail-page .chart-detail .circle.purple{ background:#6759a6;}
+#detail-page .chart-detail .circle.blue{ background:#50b4e6;}
+#detail-page .chart-detail .circle.gray{ background:#707271;}
+/*==================== Detail Page End ==================== */
+
+
+/*==================== Property Detail Start ==================== */
+.property-detail{ padding:18px 0;}
+.property-detail .options a{ color:#666; border:1px solid #d1d1d1; border-radius:4px; width:70px; height:34px; float:left; text-align:center;padding: 5px 3px; margin-left:10px;}
+.property-detail .options a:hover{ background:#d1d1d1;}
+.property-detail .options .fa{margin-right:5px;}
+.property-detail .price{ font-size:36px;font-weight:600; margin-bottom:10px;}
+.property-detail .sq-ft{ font-size:16px; color:#999; font-weight:600;}
+.property-detail .name{ font-size:24px; color:#333; font-weight:600; text-transform:uppercase;}
+.property-detail .address,.property-detail .detail{padding:0; margin:0; list-style:none;}
+.property-detail .address li, .property-detail .detail li{float:left; line-height:14px;}
+.property-detail ul li .fa{margin-right:5px;}
+.property-detail .address{ margin:20px -8px;}
+.property-detail .address li{ border-right:1px solid #333; padding:0 8px;}
+.property-detail .address li:last-child{border:none;}
+.property-detail .detail{ margin:0 -10px;}
+.property-detail .detail li{ padding:0 10px;}
+.property-detail .detail li i{ font-size:20px; margin-right:5px;line-height: 14px;}
+/*==================== Property Detail End ==================== */
+
+/*==================== Contact Us Start ==================== */
+.contact-map iframe{ width:100%;}
+#contact-us .form-control{ box-shadow:none;color: #666; font-style:italic; height:42px;}
+#contact-us textarea.form-control{ height:180px; resize:none;}
+#contact-us .btn{ font-size:18px; line-height:24px;font-weight:600; padding: 16px 26px; margin-top:15px;}
+#map {width: 100;height: 600px; }
+.clear{ clear:both; }
+/*==================== Contact Us End ==================== */
+
+
+/*==================== Agents Page Start ==================== */
+#agents-list{position:relative;}
+#agents-list .agent-img{position:relative;}
+#agents-list .agent-img:after{ content:""; position:absolute; left:0; top:0; width:100%;height:100%;}
+#agents-list .agent-img .hover-block{ opacity:0;position:absolute; left:0; top:50%; transform:translateY(-50%); width:100%; text-align:center; z-index:1;}
+#agents-list .agent-img:hover:after{ background:rgba(255,255,255,0.8);}
+#agents-list .agent-img:hover .hover-block{opacity:1;}
+#agents-list .agent-img .hover-block p{}
+#agents-list .agent-img .hover-block p .fa{ margin-right:10px;}
+#agents-list .agent-img img{ width:100%; height:auto;}
+#agents-list .agent-detail{ background:#fff; text-align:center; padding:21px 10px;margin-bottom:30px;}
+#agents-list .agent-detail .name{ font-size:18px; font-weight:600; color:#333;}
+#agents-list .agent-detail p{ font-size:14px; color:#999;font-weight:600;}
+/*==================== Agents Page End ==================== */
+
+/*==================== FAQ's Start ==================== */
+#faq-list .panel-default{ border:none; border-radius:0;}
+#faq-list .panel-default > .panel-heading {background-color: #fff;border-color: #fff;color: #666666; border-radius:0;}
+#faq-list .panel-title{ font-weight:600;}
+#faq-list .panel-heading{padding:0;}
+#faq-list .panel-title>a{font-size:16px;display:inline-block; padding:12px 20px; width:100%;background:url(../../../images/minus.png) no-repeat 98% center;}
+#faq-list .panel-title>a.collapsed{ background:url(../../../images/plus.png) no-repeat 98% center;}
+/*==================== FAQ's End ==================== */
+
+
+/*==================== 404 Page Start ==================== */
+.errorContent .error-title{text-align:center;padding: 50px 0;}
+.errorContent .error-title label{ font-weight:600; font-size:30px; line-height:24px; color:#333333;}
+.errorContent p{ font-size:21px; line-height:28px; color:#999999; text-align:center;margin: 0 auto;max-width: 60%;}
+.errorContent .error-title span{ font-size:180px; color:#002868; font-weight:600;}
+/*==================== 404 Page End ==================== */
+
+
+/*==================== Login Page Start ==================== */
+.form-content .form-area{ background:#fff; border:1px solid #d1d1d1; padding:40px 55px 10px;}
+.form-content .form-area label{ font-size:16px; color:#333;font-weight: 400;}
+.form-content .form-area .form-control{ background:#f2f2f3; border:none;color:#333; height:50px; box-shadow:none;}
+.form-content .form-area .btn{margin-top:20px;}
+.form-content .link-group ul{ padding:0; margin:22px -10px; list-style:none;}
+.form-content .link-group ul li{ font-weight:600; line-height:15px; padding:0 10px; display:inline-block;}
+.form-content .link-group ul li:first-child{ border-right:1px solid #333;}
+/*==================== Login Page End ==================== */
+
+/* Responsive Style Start 
+-------------------------------------------------- */
+@media (min-width: 768px) {
+/*==================== Header Start ==================== */
+.homePage #header{ background-color:transparent;}
+.homePage #header .navbar-header{padding:15px 0;}
+.homePage #header .quick-links{ padding: 8px 0 0;}
+.homePage #header .quick-links li a{ color:#d1d1d1;}
+.homePage #header .quick-links li:hover a{ color:#fff;}
+.homePage #header.fixed {background-color:#fff;}
+.homePage #header.fixed .quick-links li a{ color:#999999;}
+.homePage #header.fixed .quick-links li:hover a{color:#3d414c;}
+.navbar-brand .img2{ display:none;}
+.homePage #header.fixed .navbar-brand .img1{ display:none;}
+.homePage #header.fixed .img2{ display:block;}
+.homePage #header.fixed .navbar-header{padding: 10px 0;}
+.homePage #header.fixed .quick-links{padding: 10px 0 0;}
+/*==================== Header End ==================== */
+
+/*==================== Navigation Start ==================== */
+.menu-arrow{display:none;}
+.navbar-nav > li > .dropdown-menu{ display:none !important;}
+.navbar-nav > li:hover > .dropdown-menu{ display:block !important;} 
+/*==================== Navigation End ==================== */
+
+/*==================== Blogs Start ==================== */
+.blog-wrapper:last-child{padding-bottom:0;}
+/*==================== Blogs End ==================== */
+}
+
+@media (min-width: 992px) {
+/*==================== Header Start ==================== */
+.homePage #header .quick-links{ padding: 20px 0 0;}
+/*==================== Header End ==================== */
+
+/*==================== Banner Start ==================== */
+.banner-layer,.banner-thumb{min-height:850px;}
+/*==================== Banner End ==================== */
+
+/*==================== Filter Start ==================== */
+.filter-wrapper p{float:left;} 
+.filter-wrapper .category{ float:right;}
+/*==================== Filter End ==================== */
+
+/*==================== Search Control Start ==================== */
+.search-controls .search-group{ float:left;}
+.search-controls .category{ float:right;}
+/*==================== Search Control End ==================== */
+}
+
+@media (max-width: 1199px) {
+/*==================== Header Start ==================== */
+.quick-links li{ padding:0 30px;}
+/*==================== Header End ==================== */
+
+/*==================== Banner Start ==================== */
+.banner-text h1{ font-size:48px;margin-bottom: 20px;}
+.search-wrapper .search-group{ margin:0; width:100%;}
+.search-wrapper .form-control{padding-left: 75px;padding-right: 20px;}
+/*==================== Banner End ==================== */
+
+/*==================== Navigation Start ==================== */
+.navbar-nav > li > a{padding: 25px 9px;}
+/*==================== Navigation End ==================== */
+
+/*==================== What Client Say Start ==================== */
+.client-feedback{margin-top:18px;}
+.client-feedback .client-detail .img{margin-top:-38px;}
+.client-feedback .client-detail .img img{ max-width:65px;}
+/*==================== What Client Say End ==================== */
+
+/*==================== Search Control Start ==================== */
+.search-controls .search-group{ max-width:340px;}
+.search-controls .category-group{ margin-right:15px;}
+/*==================== Search Control End ==================== */
+
+/*==================== Property Detail Start ==================== */
+.property-detail .options a{width: 65px; margin-left:5px;}
+.property-detail .sq-ft{display:block;}
+.property-detail .address,.property-detail .detail{margin-left:0; margin-right:0;}
+.property-detail .address li, .property-detail .detail li{display:block; float:none; border:none; padding:5px 0;}
+/*==================== Property Detail End ==================== */
+
+/*==================== Detail Page Start ==================== */
+#detail-page .nav-tabs li a{  padding: 16px 21px; font-size:14px;}
+/*==================== Detail Page End ==================== */
+
+/*==================== Siderbar Start ==================== */
+#sidebar .agent-need .h2{ font-size:16px;}
+#sidebar .agent-need .contact-agent{ padding: 28px 20px; position:relative; z-index:2;}
+#sidebar .agent-need .agent-img img{max-width:125px;}
+/*==================== Siderbar End ==================== */
+}
+
+@media (max-width: 991px) {
+/*==================== General Style Start ==================== */
+.top-desc p{max-width:100%;}
+/*==================== General Style End ==================== */
+
+/*==================== Header Start ==================== */
+.quick-links{padding-top:8px;}
+.quick-links li{ padding:0 8px;}
+/*==================== Header End ==================== */
+
+/*==================== Banner Start ==================== */
+.banner-text h1{margin-bottom:10px;font-size: 34px;}
+.banner-text p{ font-size:14px;margin-bottom: 25px;}
+.banner-layer,.banner-thumb{max-height:455px;}
+.search-wrapper .form-control,.search-wrapper .btn{ height:48px; font-size:14px;}
+/*==================== Banner End ==================== */
+
+/*==================== Navigation Start ==================== */
+.navbar .search-box::before{ display:none;}
+/*==================== Navigation End ==================== */
+
+/*==================== About Agent Start ==================== */
+#about-agent{ min-height:1px;}
+.about-agent-detail{position:relative;margin-top: -15%; padding:30px; width:100%;}
+#about-agent .agent-img img{ width:100%;}
+#about-agent .slick-prev,#about-agent .slick-next{ bottom:69px;}
+/*==================== About Agent End ==================== */
+
+/*==================== Get In Touch Start ==================== */
+.get-in-touch .img{ display:none;}
+/*==================== Get In Touch End ==================== */
+
+/*==================== Footer Start ==================== */
+.footer-links ul{ float:none; margin-top:20px;}
+/*==================== Footer End ==================== */
+
+/*==================== Filter Start ==================== */
+.filter-wrapper .category{ margin-top:20px;}
+/*==================== Filter End ==================== */
+
+/*==================== Search Control Start ==================== */
+.search-controls .search-group{ max-width:100%; margin-bottom:20px;}
+.more-filters .category-block { padding-top: 15px;}
+.more-filters .h3{margin-bottom:10px;}
+/*==================== Search Control End ==================== */
+
+/*==================== Blogs Detail Start ==================== */
+.commentBox {margin: 30px;}
+/*==================== Blogs Detail End ==================== */
+
+/*==================== Property Detail Start ==================== */
+.property-detail .options{margin-top:10px;}
+.property-detail .options a{ margin:0 5px 0 0;}
+/*==================== Property Detail End ==================== */
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+/*==================== Latest Properties Start ==================== */
+.property-content .property-info .features ul li{ width:100%;}
+/*==================== Latest Properties End ==================== */
+}
+
+@media (max-width: 767px) {
+/*==================== Header Start ==================== */
+/*#header { position:static;}*/
+.quick-links li{padding: 0 5px;}
+.quick-links li a{font-size: 12px;}
+.quick-links li a i{ margin-right:5px;}
+.navbar-brand .img1{ display:none;}
+/*==================== Header End ==================== */
+
+/*==================== Navigation Start ==================== */
+/*.navbar-collapse{position:fixed; top:0;right:100%; width:100%; height:100%;z-index:99;}*/
+.navbar-nav > li > a em{display:none;}
+.navbar-nav > li > .dropdown-menu{ position:relative; float:none; margin-left:0;} 
+.navbar-nav > li > a{padding: 10px 9px;}
+.navbar-collapse{ max-height:280px;}
+.navbar .search-box{padding-top:10px; padding-bottom:10px;}
+.navbar .search-box .search-group input,
+.navbar .search-box .search-group button{ font-size:14px;}
+/*==================== Navigation End ==================== */
+
+/*==================== Banner Start ==================== */
+.banner-layer, .banner-thumb{max-height: 380px;}
+.banner-text h1{font-size: 24px;}
+.banner-text p{ font-size:12px; line-height:14px;}
+.search-wrapper .input-group{padding:0;}
+/*==================== Banner End ==================== */
+
+/*==================== About Us Information Start ==================== */
+#abt-info .info-box{ margin-bottom:30px;}
+/*==================== About Us Information End ==================== */
+
+/*==================== Valuable Tools and Information Start ==================== */
+.content-box{margin-bottom:30px;}
+/*==================== Valuable Tools and Information End ==================== */
+
+/*==================== About Agent Start ==================== */
+.about-agent-detail{padding:15px;}
+.about-agent-detail .inner-bg{padding: 25px 20px;}
+#about-agent .slick-prev, #about-agent .slick-next{ bottom:22px;}
+#about-agent .slick-next{ right:55px;}
+#about-agent .slick-prev{ right:99px;}
+/*==================== About Agent End ==================== */
+
+/*==================== Get In Touch Start ==================== */
+.get-in-touch .call-us{ margin:20px 0;}
+/*==================== Get In Touch End ==================== */
+
+/*==================== Properties List Start ==================== */
+#properties-list .property-content .property-info{padding-top:20px;}
+/*==================== Properties List End ==================== */
+
+/*==================== Blogs Detail Start ==================== */
+.commentBox {margin: 30px 15px;padding: 20px 15px;}
+.commentBox .post .user-details .user-info {padding-left: 18px;}
+.commentBox .post .innerComment {padding: 30px 0 0 15px;}
+.social-share ul li {margin-right: 15px;margin-bottom: 15px}
+.social-share ul a {height: 45px;width: 45px;line-height: 45px;font-size: 28px;}
+/*==================== Blogs Detail End ==================== */
+
+/*==================== Property Detail Start ==================== */
+.property-detail .address, .property-detail .detail{margin-bottom:20px;}
+/*==================== Property Detail End ==================== */
+
+/*==================== Detail Page Start ==================== */
+#detail-page .nav-tabs li{ width:100%;}
+#detail-page .nav-tabs li a{  padding: 16px 21px; font-size:14px;}
+.property-slider .slider-info{bottom:25px;}
+.property-img-slider .slick-prev, .property-img-slider .slick-next{ height:45px; width:28px;}
+.property-img-slider .slick-prev{border-radius: 0 8px 8px 0;}
+.property-img-slider .slick-next{ border-radius: 12px 0 0 12px;}
+.property-slider .expand-icon{top:10px; right:10px;}
+/*==================== Detail Page End ==================== */
+
+/*==================== 404 Page Start ==================== */
+.errorContent p{ font-size:19px; line-height:26px; max-width:100%;}
+.errorContent .error-title span{ font-size:150px;}
+/*==================== 404 Page End ==================== */
+
+/*==================== Login Page Start ==================== */
+.form-content .form-area{ padding:30px 20px 10px;}
+/*==================== Login Page End ==================== */
+}
+@media (max-width:640px) and (orientation:landscape) {
+.navbar-collapse{max-height: 210px}
+}
+@media (max-width: 639px) {
+/*==================== Banner Start ==================== */
+.search-wrapper .input-group{display:block;}
+.search-wrapper .form-control{padding:0 12px;}
+.search-wrapper .form-control, .search-wrapper .btn.btn-danger{ display:inline-block; border-radius:6px !important; width:100%; margin:5px 0; font-size:12px;}
+.search-wrapper .input-group-btn{ display:block; width:100%; clear:both;}
+.search-wrapper .input-group .bootstrap-select{position:relative;  left:0;background:#fff;padding: 0 12px;}
+/*==================== Banner End ==================== */
+
+/*==================== Filter Start ==================== */
+.filter-wrapper .category .filter-group{ margin-right:6px;}
+/*==================== Filter End ==================== */
+
+/*==================== Search Control Start ==================== */
+.search-controls .category-group{ width:100%; margin:10px 0;}
+.search-controls .bootstrap-select.form-control{ width:100%;}
+/*==================== Search Control End ==================== */
+}
+@media (max-width:480px) and (orientation:landscape) {
+.navbar-collapse{max-height: 180px}
+}
+
+@media (max-width: 479px) {
+/*==================== Header Start ==================== */
+.quick-links li{padding: 0 4px;/* display:block;*/}
+/*==================== Header End ==================== */
+
+/*==================== Banner Start ==================== */
+.banner-text h1{font-size: 18px;}
+/*==================== Banner End ==================== */
+
+/*==================== Breadcrumb Start ==================== */
+.breadcrumb-wrapper .breadcrumb li{ font-size:12px;}
+.breadcrumb > li + li::before{padding:0 4px;}
+/*==================== Breadcrumb End ==================== */
+
+/*==================== Filter Start ==================== */
+.filter-wrapper .category .btn-group{ width:100%;}
+.filter-wrapper .category .filter-group{ margin:5px 0; width:100%;}
+/*==================== Filter End ==================== */
+
+/*==================== Blogs Detail Start ==================== */
+.commentBox .post .user-details .user-info {display: block;padding: 15px 0 0;}
+/*==================== Blogs Detail End ==================== */
+
+/*==================== Detail Page Start ==================== */
+.property-slider .expand-icon{ height:35px; width:35px; line-height:35px;}
+/*==================== Detail Page End ==================== */
+}
+
+
+
+

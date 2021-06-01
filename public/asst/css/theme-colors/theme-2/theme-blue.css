@@ -1,0 +1,91 @@
+/* Common Color Start
+-------------------------------------------------- */
+
+/* blue-font-color */
+.btn-link:hover, 
+.btn-link:focus,
+.link-red,
+.link-red:hover, 
+.link-red:focus,
+h2,
+.property-content .property-info .price,
+.property-content .location i,
+.property-content .property-info .add-fav:hover,
+.about-agent-detail address p .fa,
+.breadcrumb > li.active,
+.search-controls .more-filter,
+.filter-wrapper p span,
+#sidebar .categories li:hover a,
+#sidebar .categories li:hover:before,
+.blog-wrapper .blog-detail h2,
+.blog-wrapper .blog-detail .btn-link,
+.property-detail .price,
+.property-detail .red,
+#detail-page .nav-tabs li.active a,
+#latest-properties .btn-default,
+.navbar-brand{
+	color:#017cc0;
+}
+
+/* blue-background-color */
+.navbar .navigation,
+#about-agent .slick-prev:hover,#about-agent .slick-next:hover,
+#get-in-touch,
+#footer .social-links li a:hover,
+.filter-wrapper .category .btn-group .btn-default.active,
+.property-wrapper .add-fav,
+#sidebar .side-wrapper .heading,
+#sidebar .agent-need .btn:after,
+.blog-wrapper .date,
+#client-say .slick-current.img:after,
+#about-us .info-sec .icon-box,
+#about-us .note,
+.get-in-touch .btn:hover,.get-in-touch .btn:focus,
+#latest-properties .btn-default:hover,#latest-properties .btn-default:focus,
+#news-letters .news-letters,
+.filter-box .img,.filter-box .img:after,
+.navbar-toggle .icon-bar,
+.filter-box .search-group button:hover,.filter-box .search-group button:focus{
+	background-color:#017cc0;
+}
+
+/* blue-border-color */
+.btn-default,
+#nav .dropdown-menu,
+.form-control:focus,
+.get-in-touch .btn:hover,.get-in-touch .btn:focus,
+#latest-properties .btn-default{
+	border-color:#017cc0;
+}
+
+/* blue-border-top-color */
+.filter-wrapper .category .btn-group .btn-default.active{
+	border-top-color:#017cc0;
+}
+
+/* red-border-bottom-color */
+.filter-wrapper .category .btn-group .btn-default.active,#detail-page .nav-tabs li.active a{
+	border-bottom-color:#017cc0;
+}
+
+/* blue-border-left-color */
+.commentBox .post p {
+	border-left-color:#017cc0;
+}
+
+/* blue-transparent85-background-color */
+.red-overlay{
+	background-color:rgba(1,124,192,0.9);
+}
+/* blue box shadow*/
+.dropdown-menu{box-shadow: 0 3px 0 0 #017cc0;}
+
+@media (max-width: 767px) {
+/* blue-background-color */
+.navbar-collapse{
+	background-color:#017cc0;
+}
+}
+
+/* Common Color End
+-------------------------------------------------- */

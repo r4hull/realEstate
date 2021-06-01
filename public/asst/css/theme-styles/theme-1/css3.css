@@ -1,0 +1,114 @@
+/*--- CSS3 style ---*/
+
+/*--- Use only for CSS3 styles  ---*/
+
+a{ 
+-webkit-transition:color 0.5s ease-in-out;
+-o-transition:color 0.5s ease-in-out;
+-moz-transition:color 0.5s ease-in-out;
+transition:color 0.5s ease-in-out;
+}
+button,.btn,
+.property-content .hover-block,
+#agents-list .agent-img .hover-block,
+#agents-list .agent-img:hover::after{
+-webkit-transition:all 0.5s ease-in-out;
+-o-transition:all 0.5s ease-in-out;
+-moz-transition:all 0.5s ease-in-out;
+transition:all 0.5s ease-in-out;
+}
+#header{ 
+transition: all 0.5s ease 0s;
+-webkit-transition:all 0.5s ease 0s;
+-o-transition:all 0.5s ease 0s;
+-moz-transition:all 0.5s ease 0s;
+}
+
+#get-in-touch .call-us::before{ 
+transform:rotate(25deg);
+-webkit-transform:rotate(25deg);
+-ms-transform:rotate(25deg);
+-moz-transform:rotate(25deg);
+-o-transform:rotate(25deg);
+}
+#footer .social-links li a{
+transition:all 0.5s ease-in-out 0s;
+-webkit-transition:all 0.5s ease-in-out 0s;
+-moz-transition:all 0.5s ease-in-out 0s;
+-o-transition:all 0.5s ease-in-out 0s;
+transform: scale(1);
+-webkit-transform:scale(1);
+-ms-transform:scale(1);
+-moz-transform:scale(1);
+-o-transform:scale(1);
+}
+#footer .social-links li a:hover{
+transform: scale(1.1);
+-webkit-transform:scale(1.1);
+-ms-transform:scale(1.1);
+-moz-transform:scale(1.1);
+-o-transform:scale(1.1);
+}
+.sale-label span{
+transform: rotate(-45deg);
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-ms-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform-origin: 55% 75%;
+-webkit-transform-origin:55% 75%;
+-moz-transform-origin:55% 75%;
+-ms-transform-origin:55% 75%;
+-o-transform-origin:55% 75%;
+}
+.client-feedback .client-detail .img{
+box-shadow: 0 0 2px 1px rgba(68,18,8,0.19);
+-webkit-box-shadow:0 0 2px 1px rgba(68,18,8,0.19);
+-o-box-shadow:0 0 2px 1px rgba(68,18,8,0.19);
+-moz-box-shadow:0 0 2px 1px rgba(68,18,8,0.19));
+}
+
+.search-wrapper .form-control{ 
+box-shadow: 0 3px 2px 0 #bbbbbb inset;
+-webkit-box-shadow: 0 3px 2px 0 #bbbbbb inset;
+-o-box-shadow: 0 3px 2px 0 #bbbbbb inset;
+-moz-box-shadow: 0 3px 2px 0 #bbbbbb inset;
+}
+
+.banner-text-wrapper{
+-webkit-transform:translateY(-50%);
+-o-transform:translateY(-50%);
+-moz-transform:translateY(-50%);
+transform:translateY(-50%);
+}
+.navbar .search-box:before{ 
+transform: skewX(-28deg);
+-ms-transform:skewX(-28deg);
+-moz-transform:skewX(-28deg);
+-o-transform:skewX(-28deg);
+-webkit-transform:skewX(-28deg);
+}
+#sidebar .agent-need .btn:after{
+transform: skewX(18deg);
+-ms-transform:skewX(18deg);
+-moz-transform:skewX(18deg);
+-o-transform:skewX(18deg);
+-webkit-transform:skewX(18deg);
+-webkit-transition:all 0.5s ease-in-out;
+-o-transition:all 0.5s ease-in-out;
+-moz-transition:all 0.5s ease-in-out;
+transition:all 0.5s ease-in-out;
+}
+.property-content .hover-block span{
+-webkit-transform:translateY(-50%);
+-o-transform:translateY(-50%);
+-moz-transform:translateY(-50%);
+transform:translateY(-50%);
+}
+.commentBox .post p:after {
+	transform: skewX(18deg);
+	-webkit-transform: skewX(18deg);
+	-moz-transform: skewX(18deg);
+	-o-transform: skewX(18deg);
+	-ms-transform: skewX(18deg);
+}

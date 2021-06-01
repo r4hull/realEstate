@@ -1,0 +1,79 @@
+/* Common Color Start
+-------------------------------------------------- */
+
+/* red-font-color */
+.btn-link:hover, 
+.btn-link:focus,
+.link-red,
+.link-red:hover, 
+.link-red:focus,
+h1,
+h2,
+.property-content .property-info .price,
+.property-content .location i,
+.property-content .property-info .add-fav:hover,
+.about-agent-detail address p .fa,
+.breadcrumb > li.active,
+.search-controls .more-filter,
+.filter-wrapper p span,
+#sidebar .categories li:hover a,
+#sidebar .categories li:hover:before,
+.blog-wrapper .blog-detail h2,
+.blog-wrapper .blog-detail .btn-link,
+.property-detail .price,
+.property-detail .red,
+#detail-page .nav-tabs li.active a,
+.errorContent p a,
+.form-content .link-group ul li a {
+	color:goldenrod;
+}
+
+/* red-background-color */
+.navbar,
+#about-agent .slick-prev:hover,#about-agent .slick-next:hover,
+#get-in-touch,
+#footer .social-links li a:hover,
+.filter-wrapper .category .btn-group .btn-default.active,
+.property-wrapper .add-fav,
+#sidebar .side-wrapper .heading,
+#sidebar .agent-need .btn:after,
+.blog-wrapper .date,#sidebar .agent-need .btn{
+	background-color:goldenrod;
+}
+
+/* red-border-color */
+.btn-default,
+#nav .dropdown-menu,
+.form-control:focus,#sidebar .agent-need .btn{
+	border-color:goldenrod;
+}
+
+/* red-border-top-color */
+.filter-wrapper .category .btn-group .btn-default.active{
+	border-top-color:goldenrod;
+}
+
+/* red-border-bottom-color */
+.filter-wrapper .category .btn-group .btn-default.active,#detail-page .nav-tabs li.active a{
+	border-bottom-color:goldenrod;
+}
+
+/* red-border-left-color */
+.commentBox .post p {
+	border-left-color:goldenrod;
+}
+
+/* red-transparent85-background-color */
+.red-overlay{
+	background-color:goldenrod;
+}
+
+@media (max-width: 767px) {
+/* red-background-color */
+.navbar-collapse{
+	background-color:goldenrod;
+}
+}
+
+/* Common Color End
+-------------------------------------------------- */
